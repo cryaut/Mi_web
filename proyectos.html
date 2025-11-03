@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Tu Nombre</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-code"></i> Portfolio</a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <!-- CAMBIO: Marca esta página como activa -->
+                    <li><a href="proyectos.html" class="nav-link active">Proyectos</a></li>
+                    <li><a href="olimpiadas.html" class="nav-link">Olimpiadas</a></li>
+                    <li><a href="curriculum.html" class="nav-link">Currículum</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección de Proyectos -->
+        <section id="proyectos">
+            <div class="container">
+                <h2 class="section-title">Mis Proyectos</h2>
+                
+                <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+                    
+                    <!-- ========== INICIO BLOQUE DE PROYECTO 1 ========== -->
+                    <!-- COPIA Y PEGA ESTE BLOQUE PARA AÑADIR MÁS PROYECTOS -->
+                    <div class="card">
+                        <div class="project-image" style="height: 200px; background-color: var(--secondary-color); border-radius: var(--border-radius); margin-bottom: 20px; display: flex; justify-content: center; align-items: center;">
+                            <!-- CAMBIO 1: Reemplaza el icono por una imagen real. Sube la imagen a la carpeta 'images/projects/' y cambia la ruta. -->
+                            <!-- Ejemplo: <img src="images/projects/mi-proyecto-1.jpg" alt="Captura del Proyecto 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--border-radius);"> -->
+                            <i class="fas fa-brain" style="font-size: 3rem; color: var(--accent-color);"></i>
+                        </div>
+                        <div class="project-info">
+                            <!-- CAMBIO 2: Título de tu proyecto -->
+                            <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Sistema de Recomendación con IA</h3>
+                            
+                            <!-- CAMBIO 3: Descripción breve del proyecto -->
+                            <p style="color: var(--text-muted); margin-bottom: 20px;">Una aplicación que utiliza algoritmos de machine learning para recomendar contenido personalizado basado en el historial de usuario.</p>
+                            
+                            <!-- CAMBIO 4: Tecnologías usadas -->
+                            <div class="project-tags" style="margin-bottom: 20px;">
+                                <span class="tag" style="padding: 5px 12px; background-color: var(--accent-light); color: var(--accent-color); border-radius: 20px; font-size: 0.8rem; margin-right: 5px;">Python</span>
+                                <span class="tag" style="padding: 5px 12px; background-color: var(--accent-light); color: var(--accent-color); border-radius: 20px; font-size: 0.8rem; margin-right: 5px;">TensorFlow</span>
+                                <span class="tag" style="padding: 5px 12px; background-color: var(--accent-light); color: var(--accent-color); border-radius: 20px; font-size: 0.8rem; margin-right: 5px;">Flask</span>
+                            </div>
+                            
+                            <!-- CAMBIO 5: Enlaces al demo y al código fuente -->
+                            <div class="project-links" style="display: flex; gap: 15px;">
+                                <a href="#" class="btn btn-secondary" style="font-size: 0.9rem; padding: 10px 20px;"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                                <a href="#" class="btn btn-secondary" style="font-size: 0.9rem; padding: 10px 20px;"><i class="fab fa-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========== FIN BLOQUE DE PROYECTO 1 ========== -->
+
+                    <!-- ========== INICIO BLOQUE DE PROYECTO 2 (EJEMPLO) ========== -->
+                    <div class="card">
+                        <div class="project-image" style="height: 200px; background-color: var(--secondary-color); border-radius: var(--border-radius); margin-bottom: 20px; display: flex; justify-content: center; align-items: center;">
+                            <i class="fas fa-mobile-alt" style="font-size: 3rem; color: var(--accent-color);"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 15px;">App Móvil de Gestión de Tareas</h3>
+                            <p style="color: var(--text-muted); margin-bottom: 20px;">Aplicación nativa para iOS y Android que ayuda a los usuarios a organizar sus actividades diarias con recordatorios y notificaciones.</p>
+                            <div class="project-tags" style="margin-bottom: 20px;">
+                                <span class="tag" style="padding: 5px 12px; background-color: var(--accent-light); color: var(--accent-color); border-radius: 20px; font-size: 0.8rem; margin-right: 5px;">React Native</span>
+                                <span class="tag" style="padding: 5px 12px; background-color: var(--accent-light); color: var(--accent-color); border-radius: 20px; font-size: 0.8rem; margin-right: 5px;">Firebase</span>
+                            </div>
+                            <div class="project-links" style="display: flex; gap: 15px;">
+                                <a href="#" class="btn btn-secondary" style="font-size: 0.9rem; padding: 10px 20px;"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                                <a href="#" class="btn btn-secondary" style="font-size: 0.9rem; padding: 10px 20px;"><i class="fab fa-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========== FIN BLOQUE DE PROYECTO 2 ========== -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 Tu Nombre. Todos los derechos reservados.</p>
+                <div class="footer-social">
+                    <!-- CAMBIO 6: Añade aquí tus enlaces a redes sociales -->
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

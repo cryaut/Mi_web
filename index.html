@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio profesional de estudiante de Ingeniería de Sistemas">
-    <title>Mi Portfolio - Ingeniería de Sistemas</title>
+    <title>Tu Nombre | Portfolio Profesional</title>
+    <meta name="description" content="Portfolio profesional de [Tu Nombre], estudiante de Ingeniería de Sistemas.">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Poppins y Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -15,28 +15,20 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    
-    <!-- Particles.js -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <!-- Partículas de fondo -->
-    <div id="particles-js"></div>
-    
+
     <!-- Navegación -->
     <header class="navbar">
         <div class="container">
-            <a href="#" class="logo">
-                <span class="logo-text">Portfolio</span>
-                <span class="logo-dot"></span>
-            </a>
+            <a href="index.html" class="logo"><i class="fas fa-code"></i> Portfolio</a>
             <nav class="menu">
                 <ul>
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                    <li><a href="#olimpiadas" class="nav-link">Olimpiadas</a></li>
-                    <li><a href="#curriculum" class="nav-link">Currículum</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+                    <li><a href="olimpiadas.html" class="nav-link">Olimpiadas</a></li>
+                    <li><a href="curriculum.html" class="nav-link">Currículum</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
             <div class="menu-toggle">
@@ -47,427 +39,33 @@
         </div>
     </header>
 
-    <!-- Sección Inicio / Sobre mí -->
-    <section id="inicio" class="section">
-        <div class="container">
-            <div class="profile-container">
-                <div class="profile-image">
-                    <!-- Espacio para foto de perfil -->
-                    <div class="image-placeholder">
-                        <img src="C:\Users\User\Desktop\Nueva carpeta\portfolio\images\ChatGPT Image Nov 2, 2025, 06_32_20 PM(1).png" alt="Foto de perfil" class="profile-img">
-                        <div class="image-overlay"></div>
-                    </div>
-                </div>
-                <div class="profile-info">
-                    <h1 class="name">Cris Angel Lumbí Rodriguez</h1>
-                    <h2 class="title">Estudiante de Ingeniería de Sistemas</h2>
-                    <p class="description">
-                        <!-- Espacio para breve presentación -->
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquam nisl, 
-                        eget ultricies nisl nisl eget nisl.
-                    </p>
-                    <div class="objectives">
-                        <h3>Objetivos Académicos</h3>
-                        <ul>
-                            <li>Objetivo académico 1</li>
-                            <li>Objetivo académico 2</li>
-                            <li>Objetivo académico 3</li>
-                        </ul>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    </div>
-                    <div class="cta-buttons">
-                        <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
-                        <a href="#contacto" class="btn btn-secondary">Contactar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Proyectos -->
-    <section id="proyectos" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Proyectos</h2>
-            <div class="projects-grid">
-                <!-- Proyecto 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <!-- Espacio para imagen del proyecto -->
-                        <div class="image-placeholder">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
+    <main>
+        <!-- Sección Inicio / Sobre mí -->
+        <section id="inicio">
+            <div class="container">
+                <div class="profile-container" style="display: flex; align-items: center; gap: 60px;">
+                    <div class="profile-image" style="flex: 0 0 350px;">
+                        <div class="image-placeholder" style="width: 350px; height: 350px; border-radius: 50%; background-color: var(--secondary-color); display: flex; justify-content: center; align-items: center; border: 5px solid var(--accent-color);">
+                            <i class="fas fa-user" style="font-size: 120px; color: var(--text-muted);"></i>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Título del Proyecto 1</h3>
-                        <p class="project-description">
-                            <!-- Espacio para descripción -->
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Nullam auctor, nisl eget ultricies tincidunt.
+                    <div class="profile-info" style="flex: 1;">
+                        <h1 class="name" style="font-size: 3.5rem; margin-bottom: 10px;">Tu Nombre</h1>
+                        <h2 class="title" style="font-size: 1.8rem; color: var(--accent-color); margin-bottom: 25px;">Estudiante de Ingeniería de Sistemas</h2>
+                        <p class="description" style="font-size: 1.1rem; margin-bottom: 30px;">
+                            Apasionado por la tecnología, las matemáticas y el desarrollo de soluciones innovadoras. 
+                            Busco constantemente nuevos desafíos que me permitan aplicar mis conocimientos en inteligencia artificial 
+                            y desarrollo de software para crear un impacto positivo.
                         </p>
-                        <div class="project-tags">
-                            <span class="tag">Tag 1</span>
-                            <span class="tag">Tag 2</span>
-                            <span class="tag">Tag 3</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <!-- Espacio para imagen del proyecto -->
-                        <div class="image-placeholder">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Título del Proyecto 2</h3>
-                        <p class="project-description">
-                            <!-- Espacio para descripción -->
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Nullam auctor, nisl eget ultricies tincidunt.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Tag 1</span>
-                            <span class="tag">Tag 2</span>
-                            <span class="tag">Tag 3</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <!-- Espacio para imagen del proyecto -->
-                        <div class="image-placeholder">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Título del Proyecto 3</h3>
-                        <p class="project-description">
-                            <!-- Espacio para descripción -->
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Nullam auctor, nisl eget ultricies tincidunt.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Tag 1</span>
-                            <span class="tag">Tag 2</span>
-                            <span class="tag">Tag 3</span>
+                        <div class="cta-buttons" style="display: flex; gap: 20px; margin-top: 40px;">
+                            <a href="proyectos.html" class="btn">Ver Mis Proyectos</a>
+                            <a href="contacto.html" class="btn btn-secondary">Contactarme</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Sección Material de Olimpiadas -->
-    <section id="olimpiadas" class="section">
-        <div class="container">
-            <h2 class="section-title">Material de Olimpiadas</h2>
-            <div class="olympiads-container">
-                <!-- Categoría Álgebra -->
-                <div class="olympiad-category">
-                    <h3 class="category-title">Álgebra</h3>
-                    <div class="materials-grid">
-                        <div class="material-card">
-                            <div class="material-icon">
-                                <i class="fas fa-file-pdf"></i>
-                            </div>
-                            <h4 class="material-title">Material PDF 1</h4>
-                            <p class="material-description">Descripción del material</p>
-                            <div class="material-level">
-                                <span class="level">Nivel: Básico</span>
-                            </div>
-                            <a href="#" class="material-link">Descargar</a>
-                        </div>
-                        <div class="material-card">
-                            <div class="material-icon">
-                                <i class="fas fa-video"></i>
-                            </div>
-                            <h4 class="material-title">Video Tutorial 1</h4>
-                            <p class="material-description">Descripción del video</p>
-                            <div class="material-level">
-                                <span class="level">Nivel: Intermedio</span>
-                            </div>
-                            <a href="#" class="material-link">Ver</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Categoría Geometría -->
-                <div class="olympiad-category">
-                    <h3 class="category-title">Geometría</h3>
-                    <div class="materials-grid">
-                        <div class="material-card">
-                            <div class="material-icon">
-                                <i class="fas fa-file-pdf"></i>
-                            </div>
-                            <h4 class="material-title">Material PDF 1</h4>
-                            <p class="material-description">Descripción del material</p>
-                            <div class="material-level">
-                                <span class="level">Nivel: Intermedio</span>
-                            </div>
-                            <a href="#" class="material-link">Descargar</a>
-                        </div>
-                        <div class="material-card">
-                            <div class="material-icon">
-                                <i class="fas fa-link"></i>
-                            </div>
-                            <h4 class="material-title">Enlace Recurso 1</h4>
-                            <p class="material-description">Descripción del recurso</p>
-                            <div class="material-level">
-                                <span class="level">Nivel: Avanzado</span>
-                            </div>
-                            <a href="#" class="material-link">Visitar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Categoría Teoría de Números -->
-                <div class="olympiad-category">
-                    <h3 class="category-title">Teoría de Números</h3>
-                    <div class="materials-grid">
-                        <div class="material-card">
-                            <div class="material-icon">
-                                <i class="fas fa-file-pdf"></i>
-                            </div>
-                            <h4 class="material-title">Material PDF 1</h4>
-                            <p class="material-description">Descripción del material</p>
-                            <div class="material-level">
-                                <span class="level">Nivel: Avanzado</span>
-                            </div>
-                            <a href="#" class="material-link">Descargar</a>
-                        </div>
-                        <div class="material-card">
-                            <div class="material-icon">
-                                <i class="fas fa-video"></i>
-                            </div>
-                            <h4 class="material-title">Video Tutorial 1</h4>
-                            <p class="material-description">Descripción del video</p>
-                            <div class="material-level">
-                                <span class="level">Nivel: Básico</span>
-                            </div>
-                            <a href="#" class="material-link">Ver</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Categoría Combinatoria -->
-                <div class="olympiad-category">
-                    <h3 class="category-title">Combinatoria</h3>
-                    <div class="materials-grid">
-                        <div class="material-card">
-                            <div class="material-icon">
-                                <i class="fas fa-file-pdf"></i>
-                            </div>
-                            <h4 class="material-title">Material PDF 1</h4>
-                            <p class="material-description">Descripción del material</p>
-                            <div class="material-level">
-                                <span class="level">Nivel: Intermedio</span>
-                            </div>
-                            <a href="#" class="material-link">Descargar</a>
-                        </div>
-                        <div class="material-card">
-                            <div class="material-icon">
-                                <i class="fas fa-link"></i>
-                            </div>
-                            <h4 class="material-title">Enlace Recurso 1</h4>
-                            <p class="material-description">Descripción del recurso</p>
-                            <div class="material-level">
-                                <span class="level">Nivel: Básico</span>
-                            </div>
-                            <a href="#" class="material-link">Visitar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Currículum / Educación -->
-    <section id="curriculum" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Currículum / Educación</h2>
-            <div class="curriculum-container">
-                <div class="curriculum-section">
-                    <h3 class="curriculum-subtitle">Formación Académica</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>Título de Educación</h4>
-                                <h5>Institución</h5>
-                                <p class="timeline-date">Año de inicio - Año de fin</p>
-                                <p>Descripción de la formación académica, logros, etc.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>Otro Título de Educación</h4>
-                                <h5>Otra Institución</h5>
-                                <p class="timeline-date">Año de inicio - Año de fin</p>
-                                <p>Descripción de la formación académica, logros, etc.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="curriculum-section">
-                    <h3 class="curriculum-subtitle">Cursos y Certificaciones</h3>
-                    <div class="certifications-grid">
-                        <div class="certification-card">
-                            <div class="certification-icon">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <h4 class="certification-title">Nombre del Curso/Certificación</h4>
-                            <p class="certification-institution">Institución emisora</p>
-                            <p class="certification-date">Año de obtención</p>
-                        </div>
-                        <div class="certification-card">
-                            <div class="certification-icon">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <h4 class="certification-title">Nombre del Curso/Certificación</h4>
-                            <p class="certification-institution">Institución emisora</p>
-                            <p class="certification-date">Año de obtención</p>
-                        </div>
-                        <div class="certification-card">
-                            <div class="certification-icon">
-                                <i class="fas fa-certificate"></i>
-                            </div>
-                            <h4 class="certification-title">Nombre del Curso/Certificación</h4>
-                            <p class="certification-institution">Institución emisora</p>
-                            <p class="certification-date">Año de obtención</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="curriculum-section">
-                    <h3 class="curriculum-subtitle">Menciones y Reconocimientos</h3>
-                    <div class="mentions-list">
-                        <div class="mention-item">
-                            <div class="mention-icon">
-                                <i class="fas fa-trophy"></i>
-                            </div>
-                            <div class="mention-content">
-                                <h4>Nombre del Reconocimiento</h4>
-                                <p class="mention-date">Año</p>
-                                <p>Descripción del reconocimiento o mención recibida.</p>
-                            </div>
-                        </div>
-                        <div class="mention-item">
-                            <div class="mention-icon">
-                                <i class="fas fa-medal"></i>
-                            </div>
-                            <div class="mention-content">
-                                <h4>Nombre del Reconocimiento</h4>
-                                <p class="mention-date">Año</p>
-                                <p>Descripción del reconocimiento o mención recibida.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="curriculum-section">
-                    <div class="download-cv">
-                        <a href="#" class="btn btn-primary">
-                            <i class="fas fa-download"></i> Descargar CV Completo
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Contacto -->
-    <section id="contacto" class="section">
-        <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Correo Electrónico</h4>
-                            <p>tuemail@ejemplo.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>LinkedIn</h4>
-                            <p>linkedin.com/in/tuperfil</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>GitHub</h4>
-                            <p>github.com/tuusuario</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Sitio Web</h4>
-                            <p>www.tusitio.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Tu Correo Electrónico" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Asunto" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Tu Mensaje" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                    </form>
-                    <div id="formMessage" class="form-message"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -483,13 +81,7 @@
         </div>
     </footer>
 
-    <!-- Botón para volver arriba -->
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
     <!-- JavaScript -->
     <script src="js/main.js"></script>
-    <script src="js/analytics.js"></script>
 </body>
 </html>

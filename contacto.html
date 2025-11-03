@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Tu Nombre</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-code"></i> Portfolio</a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+                    <li><a href="olimpiadas.html" class="nav-link">Olimpiadas</a></li>
+                    <li><a href="curriculum.html" class="nav-link">Currículum</a></li>
+                    <!-- CAMBIO: Marca esta página como activa -->
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="contacto">
+            <div class="container">
+                <h2 class="section-title">Ponte en Contacto</h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start;">
+                    
+                    <!-- Sección de Información de Contacto -->
+                    <div class="contact-info">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 30px;">Mis Datos de Contacto</h3>
+                        
+                        <!-- ========== INICIO ITEM DE CONTACTO 1 ========== -->
+                        <div class="contact-item" style="display: flex; align-items: center; gap: 20px; margin-bottom: 25px;">
+                            <div class="contact-icon" style="width: 50px; height: 50px; background-color: var(--accent-light); color: var(--accent-color); border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Correo Electrónico</h4>
+                                <!-- CAMBIO 1: Reemplaza con tu email -->
+                                <p style="color: var(--text-muted);">tu.email.profesional@example.com</p>
+                            </div>
+                        </div>
+                        <!-- ========== FIN ITEM DE CONTACTO 1 ========== -->
+
+                        <!-- ========== INICIO ITEM DE CONTACTO 2 ========== -->
+                        <div class="contact-item" style="display: flex; align-items: center; gap: 20px; margin-bottom: 25px;">
+                            <div class="contact-icon" style="width: 50px; height: 50px; background-color: var(--accent-light); color: var(--accent-color); border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">LinkedIn</h4>
+                                <!-- CAMBIO 2: Reemplaza con tu perfil de LinkedIn -->
+                                <p style="color: var(--text-muted);">linkedin.com/in/tu-perfil</p>
+                            </div>
+                        </div>
+                        <!-- ========== FIN ITEM DE CONTACTO 2 ========== -->
+
+                        <!-- ========== INICIO ITEM DE CONTACTO 3 ========== -->
+                        <div class="contact-item" style="display: flex; align-items: center; gap: 20px; margin-bottom: 25px;">
+                            <div class="contact-icon" style="width: 50px; height: 50px; background-color: var(--accent-light); color: var(--accent-color); border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">GitHub</h4>
+                                <!-- CAMBIO 3: Reemplaza con tu perfil de GitHub -->
+                                <p style="color: var(--text-muted);">github.com/tu-usuario</p>
+                            </div>
+                        </div>
+                        <!-- ========== FIN ITEM DE CONTACTO 3 ========== -->
+
+                    </div>
+                    
+                    <!-- Sección del Formulario de Contacto -->
+                    <div class="contact-form-wrapper">
+                        <div class="card">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 30px;">Envíame un Mensaje</h3>
+                            
+                            <!-- IMPORTANTE: Este formulario no funcionará solo con HTML/JS. Necesitas un servicio externo como Formspree, Netlify Forms o un backend. -->
+                            <!-- CAMBIO 4: Para hacerlo funcional, regístrate en Formspree (es gratis) y reemplaza el 'action' con tu URL. -->
+                            <form action="https://formspree.io/f/tu-form-id" method="POST">
+                                <div class="form-group" style="margin-bottom: 20px;">
+                                    <input type="text" name="name" placeholder="Tu Nombre Completo" required style="width: 100%; padding: 15px; background-color: var(--secondary-color); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: var(--text-color);">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 20px;">
+                                    <input type="email" name="email" placeholder="Tu Correo Electrónico" required style="width: 100%; padding: 15px; background-color: var(--secondary-color); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: var(--text-color);">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 20px;">
+                                    <input type="text" name="subject" placeholder="Asunto" required style="width: 100%; padding: 15px; background-color: var(--secondary-color); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: var(--text-color);">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 30px;">
+                                    <textarea name="message" rows="6" placeholder="Tu Mensaje" required style="width: 100%; padding: 15px; background-color: var(--secondary-color); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: var(--text-color); resize: vertical;"></textarea>
+                                </div>
+                                <button type="submit" class="btn" style="width: 100%;">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 Tu Nombre. Todos los derechos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
